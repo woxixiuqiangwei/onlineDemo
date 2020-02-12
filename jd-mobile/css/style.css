@@ -1,0 +1,689 @@
+	*{
+		padding: 0 ;
+		margin:0 ;
+	}
+	html,body{
+		height: 100%;
+	}
+	body{
+		background: #f6f6f6;
+	}
+	@media (min-width: 750px) {
+        html {
+            font-size: 55px !important;
+        }
+    }
+    li{
+    	list-style: none;
+    }
+    a{
+    	text-decoration: none;
+    	cursor: pointer;
+    }
+    img{
+    	max-width: 100%;
+    }
+	/*首页头部 样式开始*/
+		#header{
+			width: 100%;
+		    height:3.72em;
+		    overflow: hidden;
+		    position: relative;
+		    background: url(https://m.360buyimg.com/mobilecms/s1125x939_jfs/t1/93739/26/177/82934/5da87763E1f32a60c/5214f64e436563c2.jpg) no-repeat center center/cover;
+		}
+		header{
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 999;
+			width: 100vw;
+			height: .88rem;
+			display: flex;
+			align-items: center;
+			transition: .2s;
+		}
+		header.bgColor{			
+			background:#db2835; 
+		}
+		header>.menu{
+			background: url(https://ae01.alicdn.com/kf/Heb3ebabcc60b46e099730622ed9f11eea.png) no-repeat center/cover;
+			margin:0 0 0 .3rem;
+		    width: .4rem;
+		    height: .36rem;
+		    display: block;
+		}
+		header>.search{
+			width: 73vw;
+			margin-left: .3rem;
+			background: #fff;
+			height: 64%;
+			border-radius: 30px;
+			display: flex;
+			align-items: center;
+		}
+		header>.search>*{
+			display: inline-block;
+		}
+		header>.search>.icon{
+			background: url(https://ae01.alicdn.com/kf/H1ac5c18be06f45b88b4b03d9436b1d364.png) no-repeat center/cover;
+			width: .4rem;
+   		 	height: .31rem;
+   		 	margin-left: .3rem;
+		}
+		header>.search>.line{
+			margin-left: .14rem;
+			width: 1px;
+			height: .36rem;
+			background: #ddd;
+		}
+		header>.search>.fdj_icon{
+			background: url(https://st.360buyimg.com/so/images/search/jd-sprites.png?__inline) no-repeat -1.6rem 0/4rem;
+			width: .36rem;
+			height: .3rem; 
+			margin-left: .2rem;
+		}
+		header>.search>.value{
+			font-size: .28rem;
+		    color: #666;
+		    margin-left: .2rem;
+		}
+		header>.login{
+			font-size: .28rem;
+			margin-left: .2rem;
+		}
+		header>.login a{
+			color: #fff;
+		}
+		#header .slide{
+		    margin-top: .9rem;
+		    height: 2.68rem;
+		    margin: .9rem .24rem 0 .24rem;
+		}
+		.slide .swiper-container{
+			height: inherit;
+			border-radius: .16rem;	
+		}
+		.slide .swiper-pagination-bullet {
+			height: .08rem;
+			width: .22rem;
+			border-radius: 22px;
+		}
+		.slide  .swiper-pagination-bullet-active {
+			background: #ededed;
+		}
+		.slide .swiper-pagination {
+			bottom:0 !important;
+		}
+	/*首页头部 样式结束*/
+	/*京东超市列表 样式开始*/
+		#mall_list{
+			height: 3.3rem;
+			width: 100vw;
+			background: #f6f6f6;
+		}
+		.list_box{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.list_box li{
+			width: 20%;
+			text-align: center;
+    		display: block;
+		}
+		.list_box li a{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+    		align-items: center;
+		}
+		.list_box li a img{
+			width: .8rem;
+			height: .8rem;
+			margin-top: .2rem;
+		}
+		.list_box li a span{
+			font-size: .27rem;
+			display: inline-block;
+			margin-top: .12rem;
+			color: #666;
+		}
+		#mall_list .swiper-container {
+			height: inherit;
+		}
+		#mall_list .swiper-pagination{
+			bottom:-.2rem;
+		}
+		#mall_list .swiper-pagination-bullet {
+			width: .16rem;
+			height: .16rem;
+			border-radius: 50%;
+		}
+		#mall_list .swiper-pagination-bullet-active {
+			background-color: #e93b3d;
+			opacity: .7;
+			border-radius: .14rem;
+			width: .3rem;
+		}
+	/*京东超市列表 样式结束*/
+	/*banner 样式开始*/
+		#banner{
+			width: 100vw;
+			height: 2.1rem;
+		}
+	/*banner 样式结束*/
+	/*京东秒杀 样式开始*/
+		#spike{
+			width: 94vw;
+			margin:0 auto;
+			height: 3.1rem;
+			background: #fff;
+			border-radius: .16rem;
+			margin-top: .16rem;
+		}
+		.spike_title{
+			position: relative;
+			height: .68rem;
+			display: flex;
+			align-items: center;
+			background:url(https://ae01.alicdn.com/kf/Hda791d228a9c49b7a5ba2af02505837bD.png) no-repeat center center/contain;
+		}
+		.title_img{
+			display: inline-block;
+			width: 1.4rem;
+			height: .54rem;
+			margin:0 .18rem;
+			background:url('https://ae01.alicdn.com/kf/H346df4d0ef7543c4aaa9138a300ba7dcx.png') no-repeat center center/contain;
+		}
+		.spike_title>strong{
+			font-size: .25rem;
+		    color: #232326;
+		    font-weight: 700;
+		    display: inline-block;
+		}
+		.spike_timer{
+			display: flex;
+			align-items: center;
+			margin-left: .17rem;
+		}
+		.spike_timer>div{
+			width: .38rem;
+			height: .38rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #232326;		
+			border:1px solid #dfdfdf;
+		}
+		.spike_timer>span{
+			display: inline-block;
+		    width: .14rem;	   
+		}
+		.spike_timer>div,.spike_timer>span{
+			 text-align: center;
+			 font-size: .25rem;
+		}
+		.spike_more{
+			position: absolute;
+			right: 0;
+			display: flex;
+			align-items: center;
+			font-size: .26rem;
+			color:#f23030;
+		}
+		.spike_more>span{
+			background: #f23030;
+		    color: #fff;
+		    border-radius: 50%;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    width: 0.26rem;
+		    height: .26rem;
+		    font-size: 0.25rem;
+		    margin:0 .2rem 0 .1rem;
+		}
+		.spike_wrapper{
+			height: 2.45rem;
+
+		}
+		.spike_wrapper .swiper-container {
+			height: inherit;
+		}
+		.spike_swiper ul{
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.spike_swiper ul li{
+			display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    margin:0 .1rem;
+		}
+		.spike_swiper ul li img{
+			width: 1.32rem;
+   			height: 1.32rem;
+		}
+		.spike_swiper ul li .price{
+			font-size: .36rem;
+			color: #e93b3d;
+			font-family: JDZhengHT-EN-Bold;
+			font-weight: bold;
+			margin-top: .1rem;
+		}
+		.spike_swiper ul li .price i,.spike_swiper ul li .old_price i{
+			font-size: .24rem;
+			font-style: normal;
+		}
+		.spike_swiper ul li .old_price{
+			color:#999;
+			font-size: .24rem;
+			text-decoration: line-through;
+		}
+		.spike_swiper .swiper-pagination-bullet-active {
+			background:#e93b3d;
+		}
+		.spike_swiper .swiper-pagination-bullet {
+			width: .12rem;
+			height: .12rem;
+		}
+		.spike_swiper .swiper-pagination {
+			bottom: -.15rem;
+		}
+	/*京东秒杀 样式结束*/
+	/*图片列表区 样式开始*/
+		#show_img{
+			width: 94vw;
+			margin:0 auto;
+			height:2.4rem;
+			background: #fff;
+			border-radius: .16rem;
+			margin-top: .2rem;
+			margin-bottom:  .2rem;
+			display: flex;
+		}
+		#show_img>img{
+			max-width: 50%;
+			float: left;
+		}
+		#show_img>img:first-child{
+			border-top-left-radius: 3%;
+			border-bottom-left-radius:3%;
+		}
+		#show_img>img:last-child{
+			border-top-right-radius: 3%;
+			border-bottom-right-radius: 3%;
+		}
+		.show_img_list ul{
+			display: flex;
+			justify-content: center;
+		}
+		.show_img_list ul li{
+			width: 33.33%;
+			height: 2rem;
+			display: flex;
+		    justify-content: center;
+		}
+		.show_img_list ul li img{
+			max-width: 100%;
+		}
+	/*图片列表区 样式结束*/
+	/*推荐、精选区 样式开始*/
+		#recommend{
+			width: 94.5vw;
+			margin:0 auto;
+		}
+		#recommend .title{
+			display: flex;
+			height: .7rem;
+			margin: .1rem 0;
+		}
+		#recommend .list ul{
+			display: flex;
+			align-items: center;
+    		justify-content: center;
+		}
+		#recommend .list li{
+			position: relative;
+			height: 2.4rem;
+			width: 1.74rem;
+			margin-right: .06rem;
+		}	
+		#recommend .list .full_bg{
+			position: absolute;
+			top: 0;
+		    left: 0;
+		    width: inherit;	  
+		    height: inherit; 
+		}
+		#recommend .list .item_name{
+			font-weight: 700;
+			font-size: .28rem;
+			position: absolute;
+			color:#fff;
+			left: 50%;
+		    transform: translateX(-50%);
+		    top: .04rem;
+		}
+		#recommend .list .item_title{
+			font-size: .24rem;
+			color:#fff;
+			position: absolute;
+			bottom: .1rem;
+			left: 50%;
+			width: 57%;
+		    transform: translateX(-50%);
+		}
+		#recommend .list .center_img{
+			width: 1.26rem;
+		    height: 1.26rem;
+		    position: absolute;
+		    left: 50%;
+		    transform: translate(-50%,-50%);
+		    top: 50%;
+		}
+		.featured_list ul{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.featured_list li{
+			background: url(https://m.360buyimg.com/mobilecms/s184x242_jfs/t1/53664/35/13334/52490/5da17fb3Ef804218e/c5b99df8fe1eaa50.png!q70.jpg.dpg) no-repeat center/cover;
+			height: 2.4rem;
+			width: 1.72rem;
+			margin-right: 0.06rem;
+			position: relative;
+		}
+		#recommend li.no_right{
+			margin-right: 0;
+		}
+		.featured_list li .img{
+			width: 1.26rem;
+    		height: 1.26rem;
+    		margin:0 auto;
+    		margin-top: .12rem;
+
+		}
+		.featured_list li .desc{
+			position: static !important;
+			font-size: .24rem;	    
+			display: block;
+		    text-align: center;
+		    margin-top: .04rem;
+		    transform: scale(.88);
+		}
+		.featured_list li .img_title{
+			font-size: .28rem;
+		    bottom: .13rem;
+		    left: 50%;
+		    width: 67%;
+		    transform: translateX(-50%);
+		}
+		.featured_list li .desc,.featured_list li .img_title{
+			position: absolute;
+			color: #fff;
+		}
+		/*东家小院 样式开始*/
+			.east_home{
+				height: 4.88rem;
+				background: #fff;
+				border-radius: .1rem;
+			}
+			.east_home .top{
+				display: flex;
+				border-bottom: 1px solid #eee;
+			}
+			.east_home .top>div{
+				width: 50%;
+				display: inline-block;
+			}
+			.east_home .top>.top_left{
+				border-right: 1px solid #eee;
+			}
+			.east_home .top .text{
+				height: .76rem;
+				margin: .1rem 0 0 .1rem;
+			}
+			.east_home .top .text .text_name,.every_day>div .text_name{
+				font-weight: 700;
+				font-size: .32rem;
+				color: transparent;
+				background: linear-gradient(90deg, #45CAFF,#1471FB);
+				-webkit-background-clip: text;
+			}
+			.east_home .top .text span{
+				font-size: .24rem;
+				color:#666771;
+				display: inherit;
+			}
+			.east_home .top .img_box{
+				display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    margin-top: .1rem;
+			}
+			.east_home .top .img_box img{
+				width: 1.2rem;
+				height: 1.2rem;
+				margin: .1rem;
+				margin-bottom: .18rem;
+			}
+			.east_home .bottom .text_name,.every_day div .text_name{
+				font-weight: 700;
+				font-size: .32rem;
+			}
+			.east_home .bottom .text_name,.every_day div .text_name,.east_home .top .text .text_name{
+				margin-bottom: .03rem;
+			}
+			.east_home .bottom .text span:last-child,.every_day div .text span:last-child{
+				font-size: .24rem;
+				color:#666771;
+			}
+			.east_home .bottom .text,.every_day .text{
+				display: flex;
+				flex-direction: column;
+				margin-left: .2rem;
+				margin-top: .1rem;
+			}
+			.east_home .bottom>div,.every_day>div{
+				width: 25%;
+				border-right: 1px solid #eee;
+				box-sizing: border-box;
+			}
+			.east_home .bottom>div:last-child{
+				border-right:1px solid transparent;
+			}
+			.east_home .bottom,.every_day{
+				display: flex;
+			}
+			.east_home .bottom .img,.every_day>div .img{
+				width: 1.2rem;
+				height: 1.2rem;
+				margin:0 auto;
+				margin-top: .12rem;
+			}
+		/*东家小院 样式结束*/
+		/*每日逛 样式开始*/
+			.every_day{
+				height: 4.8rem;
+				margin:0 auto;
+				background: #fff;
+				border-radius: .1rem;
+				flex-wrap: wrap;
+			}
+			.every_day>div{
+				border-bottom: 1px solid #eee;
+			}
+			.every_day>div.no_border{
+				border-right: 1px solid transparent;
+			}
+			.every_day>div .text_name{
+				background: linear-gradient(90deg, #FF2A2A,#F139D2);
+				-webkit-background-clip: text;
+			}
+		/*每日逛 样式结束*/
+		/*京东快报 样式开始*/
+			.new_list_wrapper{
+				margin:0 auto;
+				height: .6rem;
+				background: #fff;
+				margin-top: .2rem;
+				border-radius: .1rem;
+				display: flex;
+				align-items: center;
+			}
+			.new_logo{
+				width: 1.44rem;
+				height: .32rem;
+				margin-left: .18rem;
+			}
+			.new_list{
+				height: inherit;
+				width: 4.35rem;
+				margin:0 .2rem;
+				display: flex;
+    			align-items: center;
+			}
+			.new_list ul{
+				width: inherit;
+			}
+			.new_list li{
+				font-size: .24rem;
+				color:#333;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.new_list li span{
+				color: #f23030;
+    			margin-right: .1rem;
+			}
+			.more_new{
+				color: #181818;
+				font-size: .24rem;
+				padding: 0 .1rem;
+    			border-left: 1px solid #ddd;
+			}
+		/*京东快报 样式结束*/
+	/*推荐、精选区 样式结束*/
+	/*为你推荐 样式开始*/
+		#recommend_for_you{
+			width: 94.5vw;
+			margin:0 auto;
+			background: #f0f2f5;
+			margin-top: .2rem;
+			margin-bottom: 100px;
+			border-radius: .05rem;
+		}
+		#recommend_for_you .title{
+			height: .7rem;
+			display: flex;
+    		align-items: center;
+		}
+		#recommend_for_you .title img{
+			display: block;
+		}
+		#recommend_for_you .list{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#recommend_for_you .list li{
+			box-sizing: border-box;
+			width: 50%;
+			height: 5.4rem;
+			background: #fff;
+			border-right: .1rem solid #f0f2f5;
+			border-bottom: .1rem solid #f0f2f5;
+		}
+		#recommend_for_you .list li.no_border{
+			border-right: none;
+		}
+		#recommend_for_you .list a{
+			display: block;
+			height: inherit;
+		}
+		#recommend_for_you .list a img{
+			display: block;
+			width: 3.52rem;
+    		height: 3.52rem;
+		}
+		#recommend_for_you .list a p{
+			box-sizing: border-box;
+		    height:.57rem;
+		    font-size:.26rem;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: -webkit-box;
+		    -webkit-line-clamp: 2;
+		    -webkit-box-orient: vertical;
+		    word-break: break-word;
+		    color: #232326;
+		    line-height: .3rem;
+		    margin-top: .2rem;
+		    margin-bottom:.06rem;
+		    padding:0 .08rem;
+		}
+		#recommend_for_you .list a .price_box{
+			position: relative;
+			height: .52rem;
+			margin-top: .16rem;
+		}
+		#recommend_for_you .list a .price{
+			font-size: .32rem;
+		    position: absolute;
+		    top: 50%;
+   			transform: translateY(-50%);
+		    left:.1rem;
+		    color: #f23030;
+		    display: flex;
+   		 	align-items: center;
+		}
+		#recommend_for_you .list a .price i{
+			font-style: normal;
+			font-size: .24rem;
+		}
+		#recommend_for_you .list a .price_tag{
+			border: 1px solid #e4393c;
+		    color: #e4393c;
+		    font-size: .24rem;
+		    margin-left: .16rem;
+		    padding: .01rem .08rem;
+		    display: inline-block;
+		}
+		#recommend_for_you .list a .look_some{
+			font-size: .24rem;
+		    position: absolute;
+		    color: #686868;
+		    top: 50%;
+    		transform: translateY(-50%);
+		    right: .1rem;
+		    border: 1px solid #bfbfbf;
+		    border-radius: 4px;
+    		padding: .04rem .1rem;
+		}
+	/*为你推荐 样式结束*/
+	/*首页底部 样式开始*/
+		footer{
+			width: 100vw;
+			height: 1rem;
+			background: #fff;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			display:flex;
+			align-items: center;
+			justify-content: center; 
+		}
+		footer>a{
+			display: inline-block;
+			width: 20%;
+			height: inherit;
+			display:flex;
+			align-items: center;
+			justify-content: center; 
+		}
+		footer>a>img{
+			width: 1.4rem;
+			height: 1rem;
+		}
+	/*首页底部 样式结束*/

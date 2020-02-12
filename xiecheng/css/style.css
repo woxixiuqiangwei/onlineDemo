@@ -1,0 +1,494 @@
+		*{
+	        margin: 0;
+	        padding: 0;
+	    }
+	    html{
+	    	font-size: 13.333333vw;
+	    }
+	    body{
+	    	/*background: #fafafc;*/
+	    }
+	    header{
+	    	position: fixed;
+	    	width: 100%;
+	    	height: 34px;
+	    	top:0;
+	    	font-size: .32rem;
+	    	display: flex;
+	    	justify-content: center;
+	    	z-index: 66;
+	    	padding: .2rem 0;
+			transition: .3s;
+	    }
+	    .highLight{
+	    	background: #d1d1d1;
+	    }
+	    .highLight .headerLeft{
+	    	background-color: #ececed;
+	    }
+	    .highLight .headerRight{
+	    	background-position: .16rem -1.42rem;
+	    }
+	     .highLight .headerRight>span{
+	     	color: #222 !important;
+	     }
+	    .headerLeft{
+			width: 85%;
+			border-radius: .5rem;
+			display: flex;
+			align-items: center;
+			background: white url(https://pic.c-ctrip.com/platform/h5/home/home-common-sprite2x@v7.15.png) no-repeat;
+			background-size: 7%;
+			background-position: 15px 10px;
+			margin-right: .1rem;
+	    }
+	    .headerLeft>span{
+			margin-left: .8rem;
+			color:#666;
+	    }
+	    .headerRight{
+	    	font-size: .3rem;
+		    background: url(https://pic.c-ctrip.com/platform/h5/home/home-common-sprite2x@v7.15.png) no-repeat;
+		    background-size: 57%;
+		    background-position: .16rem -.64rem;
+	    }
+	    .headerRight>span{
+			margin-top: .35rem;
+		    display: inline-block;
+		    color: white;
+	    }
+	    .swiper-container {
+		    width:100%;
+		    height: 200px;
+		    border-bottom-left-radius:.5rem; 	
+		    border-bottom-right-radius:.5rem; 	
+		}
+		.swiper-slide img{
+			max-width: 100%;
+		}  
+		.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+			right: 0;
+			bottom: .9rem;
+		}
+		.swiper-pagination {
+			text-align: right;
+		}
+		.swiper-pagination-bullet-active {
+			background: white;
+		    width: .5rem;
+		    border-radius: .2rem;
+		}
+		.floatList{
+			list-style: none;
+			display: flex;
+			margin: -.5rem .24rem .24rem;
+			background:#fff;
+			box-shadow: 0 2px 6px rgba(0,0,0,.08);
+			position: relative;
+			z-index: 60;
+			border-radius: .26rem;
+			align-items: center;
+			justify-content: center;
+		}
+		.subnav-entry{
+			display: flex;
+			list-style: none;
+			padding:.2rem;
+			padding-top: 0;
+			flex-wrap: wrap;
+			background: #fafafc;
+		}
+		.floatList li{
+			flex: 1;
+			padding: .1rem 0;
+		}
+		.floatList li a,.subnav-entry li a{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.floatList li span,.subnav-entry li span{
+			color:#000;
+			font-size: .26rem
+		}
+		.floatList li span:first-child{
+			width:.8rem;
+		    height:.8rem;
+		    border-radius: 100%;
+		    background-image: url(https://pic.c-ctrip.com/platform/h5/home/home-fivemain-sprite2x@v7.15.png);
+		    background-repeat: no-repeat;
+		    background-size: .8rem; auto;
+		    display: block;
+		}
+		.floatList li span.f-play{
+			background-position: 0 -.8rem;
+		}
+		.floatList li span.f-eat{
+			background-position: 0 -1.6rem;
+		}
+		.floatList li span.f-go{
+			background-position: 0 -2.4rem;
+		}
+		.floatList li span.f-oneday{
+			background-position: 0 -3.2rem;
+		}
+		.subnav-entry li{
+			width: 20%;
+		}
+		.subnav-entry li span:first-child{
+			width: .56rem;
+		    height: .56rem;
+		    background-image: url(https://pic.c-ctrip.com/platform/h5/home/un_ico_subnav2x@v7.152.png);
+		    background-size: .56rem auto;
+		    background-repeat: no-repeat;
+		    margin-top: .2rem;
+		    margin-bottom: .1rem;
+		    display: block;
+		}
+		.subnav-entry  span.subnav-wifi{
+			background-position: 0 -.56rem;
+		}
+		.subnav-entry  span.subnav-insurance{
+			background-position: 0 -1.12rem;
+		}
+		.subnav-entry  span.subnav-shopping{
+			background-position: 0 -1.68rem;
+		}
+		.subnav-entry  span.subnav-guide{
+			background-position: 0 -2.24rem;
+		}
+		.subnav-entry  span.subnav-flight{
+			background-position: 0 -2.78rem;
+		}
+		.subnav-entry  span.subnav-card{
+			background-position: 0 -3.36rem;
+		}
+		.subnav-entry  span.subnav-creditCard{
+			background-position: 0 -3.92rem;
+		}
+		.subnav-entry  span.subnav-photograph{
+			background-position: 0 -5.04rem;
+		}
+
+	    div.wrapper{
+	    	margin:.2rem;
+	    	height: 31vh;
+	    	display: flex;
+	    	flex-wrap: wrap;
+	    	border-radius: 8px;    	
+	    }
+	    .wrapper>div{
+			height: 33.3%;
+	    }
+	    .row1,.row2,.row3{
+	    	width: 100%;
+	    	border-bottom: 1px solid #fff;
+	    }
+	    .row1-1{
+	    	background: linear-gradient(to right,#fa5956,#fb8650 54%);
+	    	border-top-left-radius: 8px;
+	    }
+	    .row1-2{
+	    	border-top-right-radius: 8px;
+	    	position: relative;
+	    	background: linear-gradient(to right,#ffbc49,#ffd252);
+	    }
+	    .relative{
+	    	position: relative;
+	    }
+	    .row1-1,.row2-1{
+	    	width: 53%;
+	    }
+	    .row1-2,.row2-2{
+	    	width: 47%;    
+	    }
+	    .row2{
+	    	background: linear-gradient(to right,#4b8fed,#53bced);
+	    }
+	    .row3{
+	    	background: linear-gradient(to right,#34c2aa,#6cd557);
+	    	border-bottom-left-radius: 8px;
+	    	border-bottom-right-radius: 8px;
+
+	    }
+	    .row2-2>div{
+	    	width: 50%;
+	    }
+	    .row1>div,.row1-1>div,.row1-2>div,.row2>div,.row2-1>div,.row2-2>div{
+	    	float: left;
+	    	height: 100%;
+	    	display: flex;
+    		align-items: center;
+	    }
+	    a{
+	    	font-size: .32rem;
+	    	color:#fff;
+	    }
+	    .row1-1>div:nth-of-type(1){
+	    	width: 55%;
+	    	background: url(https://pic.c-ctrip.com/platform/h5/home/grid-nav-items-hotel@v7.15.png)  no-repeat right bottom;
+	    	 background-size: 79%;
+	    }
+	    .row1-1>div:nth-of-type(2){
+	    	width: 45%;
+	    	 background: url(https://pic.c-ctrip.com/platform/h5/home/grid-nav-items-minsu@v7.15.png) no-repeat left bottom;
+		    background-size: 43%;
+	    }
+	    .row1-2>div{
+	    	width: 100%;
+	    	 background: url(https://pic.c-ctrip.com/platform/h5/home/grid-nav-items-jhj@v7.15.png) no-repeat right bottom;
+		    background-size: 54%;
+	    }
+	    .row2-1>div:nth-of-type(1){
+	    	width: 55%;
+	    	background: url(https://pic.c-ctrip.com/platform/h5/home/grid-nav-items-flight@v7.15.png)  no-repeat right bottom;
+	    	 background-size: 79%;
+	    }
+	    .row2-1>div:nth-of-type(2){
+	    	width: 45%;
+	    	 background: url(https://pic.c-ctrip.com/platform/h5/home/grid-nav-items-train.png) no-repeat left bottom;
+		    background-size: 41%;
+	    }
+	    .row3>.row2-1>div:nth-of-type(1){
+	    	width: 55%;
+	    	background: url(https://pic.c-ctrip.com/platform/h5/home/grid-nav-items-travel@v7.15.png)  no-repeat right bottom;
+	    	 background-size: 80%;
+	    }
+	   .row3>.row2-1>div:nth-of-type(2){
+	    	width: 45%;
+	    	 background: url(https://pic.c-ctrip.com/platform/h5/home/grid-nav-items-dingzhi@v7.15.png) no-repeat left bottom;
+		    background-size: 63%;
+	    }
+	    .borderL{
+			border-left: 1px solid #fff;
+	    }
+		.mar-auto{
+			display: block;
+   			margin: 0 auto;
+		}
+		.pad-left{
+			padding-left: .24rem;
+		}
+		.colo{
+			color: #a05416;
+		}
+
+		.row1-2 span{
+			position: absolute;
+			font-size: .2rem;
+			top: .1rem;
+    		right: .6rem;
+    		background: red;
+    		color: #fff;
+    		border-radius: 7px;
+    		border-bottom-left-radius: 0;
+    		padding: 2px 5px;
+		}
+
+		.special_sale{
+			border-top: 1px solid #ddd;
+		    border-bottom: 1px solid #ddd;
+		    padding-bottom: .2rem;
+		}
+		.sale_title{	
+			height:.9rem;
+			position: relative;
+		}
+		.sale_title:before{
+			content: '';
+			display: inline-block;
+			background: url(https://pic.c-ctrip.com/h5/home/un_home_text.png) no-repeat;
+			height: .38rem;
+			width:1.6rem;
+			background-size: 100% auto;
+			position: absolute;
+			left:.2rem;
+			top:50%;
+			transform: translateY(-50%);
+		}
+		.sale_title>span{
+			color:#fff;
+			font-size: .26rem;
+			position: absolute;
+			right: .2rem;
+			margin-top:.16rem;
+			background: linear-gradient(to right,#ff4e63,#ff6cc9);
+			padding: .08rem .2rem; 
+    		border-radius: .2rem;
+		}
+		.saleBox{
+			display: flex;
+			margin:0 .14rem;
+		}
+		.saleBox>div{
+			width:50%;
+		}
+		.saleBox img{
+			max-width: 100%;
+		}
+		.saleBox_left{
+			display: flex;
+		    background: #f9f9f9;
+		    flex-direction: column;
+		    position: relative;
+		}
+		.saleBox_left .flag_hot{
+			position: absolute;
+		    z-index: 10;
+		    line-height: 20px;
+		    padding: 0 .12rem 0 .16rem;
+		    left: 0;
+		    top: 0;
+		    margin-left: 0;
+		    background-color: #fd3a51;
+		    color: #fff;
+		    font-size: .24rem;
+		    text-align: center;
+		}
+		.saleBox_left img{
+			min-height: 117px;
+		}
+		.saleBox_left>p{
+		    height: .67rem;
+		    text-overflow: -o-ellipsis-lastline;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: -webkit-box;
+		    -webkit-line-clamp: 2;
+		    -webkit-box-orient: vertical;
+		    padding: 8px;
+		    font-size: .28rem;
+		    margin:.1rem 0;
+		}
+		.saleBox_left>span{
+			font-size: .36rem;
+			color: #ff495e;
+	    	line-height: 1;
+	    	font-weight: 400;
+	    	margin-left: .2rem;
+		}
+   		.saleBox_right>.top{
+   			display: flex;
+		    height: 2rem;
+		    align-items: center;
+		    justify-content: center;
+		    background: #f9f9f9;
+		    margin-left: .1rem;
+   		}
+		.saleBox_right>div{
+			font-size: .3rem;
+		}
+   		.saleBox_right>.top img{
+   			width: 1.2rem;
+		    height: 1.2rem;
+		    margin-left: .2rem;
+   		}
+   		.saleBox_right>.top div span:first-child{
+   			font-weight: 700;
+		    font-size: .28rem;
+		    letter-spacing: .03rem;
+		    color: #fd3a51;
+   		}
+   		.saleBox_right>.top div span:last-child,.saleBox_right .bottom_left span:nth-child(2),.saleBox_right .bottom_right span:nth-child(2){
+   			font-size: .24rem;
+   		}
+   		.saleBox_right>.bottom{
+			display: flex;
+			margin-top: .1rem;
+			margin-left: .1rem;
+   		}
+   		.saleBox_right>.bottom>div{
+			width: 49%; background: #f9f9f9;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    padding: .2rem 0;
+		}
+		.saleBox_right>.bottom .bottom_right{
+			margin-left: .1rem;
+		}
+		.saleBox_right>.bottom img{
+			width: 1rem;
+		    height: 1rem;
+		}
+		.saleBox_right>.bottom .bottom_left span:first-child,.saleBox_right>.bottom .bottom_right span:first-child {
+			font-weight: 700;
+		    font-size: .28rem;
+		    letter-spacing: .03rem;
+		    color: #6aabff;
+		}
+		.sales_huodong .sale_title{
+			border-bottom: 1px solid #ddd;
+		}
+		.sales_huodong .sale_title:before{
+			background-position: 0 -.4rem;
+		}
+		.sales_huodong .sale_title>i{
+			position: absolute;
+		    left: 1.8rem;
+		    top: 50%;
+		    display: inline-block;
+		    background: url(https://pic.c-ctrip.com/platform/h5/home/icon-gg@2x.png) 0 0 no-repeat;
+		    background-size:89%;
+		    width: .84rem;
+		    height: .44rem;
+		    transform: translateY(-40%);
+		}
+		.sales_huodong .box{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.sales_huodong .box>div{
+			width: 50%;
+			border-bottom: 1px solid #eee;
+			box-sizing: border-box;
+			 border-left: 1px solid #eee;   
+		}
+		.sales_huodong .box img{
+			max-width: 100%;
+		}
+   		footer ul{
+   			font-size: .27rem;
+   			display: flex;
+   			justify-content: center;
+   			align-items: center;
+   			border-bottom: 1px solid #ddd;
+   		}
+   		footer ul li{
+   			display: flex;
+   			flex-direction: column;
+   			align-items: center;
+   			width: 33.3%;
+   			padding: .2rem 0;
+   		}
+   		footer ul li img{
+   			width: .52rem;
+   			height: .52rem;
+   			margin-bottom: .1rem;
+   		}
+   		footer p {
+   			padding-top: .2rem;
+		    text-align: center;
+		    font-size: .25rem;
+		    color: #666;
+   		}
+   		footer p:last-child {
+   			color: #999;
+   			padding-bottom: .3rem;
+   		}
+   		footer p span{
+   			padding: 0 .26rem;
+   			 border-right: 1px solid #ddd;
+   		}
+   		footer p span img{
+   			width: .3rem;
+   			height: .3rem;
+   			vertical-align: bottom;
+   		}
+   		footer p span img:first-child{
+   			margin-right: .16rem;
+   		}
+   		footer p span:last-child{
+   			border-right: 1px solid transparent;
+   		}

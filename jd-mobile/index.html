@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东首页 - 移动端</title>
+	<meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
+	<meta name="referrer" content="no-referrer" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="./css/style.css" charset="UTF-8">
+</head>
+<body>
+	<!-- 首页头部  开始 -->
+	<div id="header">
+		<header>
+			<div class="menu"></div>
+			<div class="search">
+				<i class="icon"></i>
+				<span class=line></span>
+				<i class='fdj_icon'></i>
+				<span class='value'>路由器</span>
+			</div>
+			<div class="login">
+				<a href="http://112.124.202.151:8080/htmlTest/gulp.zip">登录</a>
+			</div>
+		</header>
+		<div class="slide">
+			<div class="swiper-container swiper1">
+				<div class="swiper-wrapper">
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 首页头部  结束 -->
+	<!-- 京东超市列表  开始 -->
+	<div id="mall_list">
+		<div class="swiper-container swiper2">
+			<div class="swiper-wrapper">
+				<!-- <div class="swiper-slide">
+					<ul class='list_box'>
+						<li>
+							<a href="">
+								<img src="" alt="">
+								<span></span>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- 京东超市列表  结束 -->
+	<!-- banner  开始 -->
+	<div id="banner">
+		<a href="">
+			<img src="https://m.360buyimg.com/mobilecms/s750x200_jfs/t1/74435/29/13496/100929/5daecfa3E52e99ce6/bdc340f46634252b.jpg!q70.dpg.webp" alt="">
+		</a>
+	</div>
+	<!-- banner  结束 -->
+	<!-- 京东秒杀  开始 -->
+	<div id="spike">
+		<div class="spike_title">
+			<div class="title_img"></div>
+			<strong>16点场</strong>
+			<div class="spike_timer">
+				<div>01</div>
+				<span>:</span>
+				<div>40</div>
+				<span>:</span>
+				<div>33</div>
+			</div>
+			<a href="" class='spike_more'>
+				更多秒杀
+				<span>></span>
+			</a>
+		</div>
+		<div class="spike_wrapper">
+			<div class="swiper-container spike_swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" v-for='(val,i) in demo'>
+					<!-- 	<ul>
+							<li v-for='(item,index) in val.list'>
+								{{item.price}}
+							</li>
+						</ul> -->
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>	
+		</div>
+	</div>
+	<!-- 京东秒杀  结束 -->
+	<!-- 图片列表区  开始 -->
+	<div id="show_img">
+		<img src="https://m.360buyimg.com/mobilecms/s376x240_jfs/t1/49601/16/12206/115887/5d91b4d5E34709952/aba2bcb4855e6e52.png!q70.jpg.dpg" alt="">
+		<img src="https://m.360buyimg.com/mobilecms/s376x240_jfs/t1/32449/33/15631/174497/5cc2d86bE0289110c/9c53e25651659d43.png!q70.jpg.dpg" alt="">
+	</div>
+	<div class="show_img_list">
+		<ul>
+			<li>
+				<div>
+					<img src="https://m.360buyimg.com/mobilecms/s250x200_jfs/t1/57519/33/14152/101474/5dafb9feEaa466584/ac595b85ed721ee7.jpg!q70.jpg.dpg" alt="">
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="https://m.360buyimg.com/mobilecms/s250x200_jfs/t1/78090/15/13715/26015/5daebff0E8e27876f/6c125a322a6d7339.png!q70.jpg.dpg" alt="">
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="https://m.360buyimg.com/mobilecms/s250x200_jfs/t1/62937/17/13721/57534/5daefa78E15f0b5e3/f6fb38e18f31da08.jpg!q70.jpg.dpg" alt="">
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- 图片列表区  结束 -->
+	<!-- 推荐、精选区  开始 -->
+	<div id="recommend">
+		<div class="title">
+			<img src="https://m.360buyimg.com/mobilecms/s750x80_jfs/t1/93541/25/593/13160/5db00e4eE553cfd0d/2de8e2d3f7e38027.png!q70.jpg.dpg" alt="">
+		</div>
+		<div class="list">
+			<ul>
+				<li>
+					<img src="https://m.360buyimg.com/mobilecms/s240x174_jfs/t1/82976/35/13328/33326/5da85120Ed3cc293d/ba2bc429acbd4d62.png!q70.jpg.dpg" alt="" class='full_bg'>
+					<img class='center_img' src="https://m.360buyimg.com/n1/s240x240_jfs/t1/57889/11/14222/124932/5db01ca1E07ee5670/81ed3304c7729dbb.jpg!q70.jpg.dpg" alt="">
+					<span class="item_name">手机榜</span>
+					<p class="item_title">热卖尖货</p>
+				</li>
+				<li>
+					<img src="https://m.360buyimg.com/mobilecms/s240x174_jfs/t1/68914/37/13111/38375/5da85135Ea88bb41d/9f9983b690f33d4e.png!q70.jpg.dpg" alt="" class='full_bg'>
+					<img class='center_img' src="https://m.360buyimg.com/n1/s240x240_jfs/t1/20415/10/534/611933/5c0a81c9E35324301/1d135fbf67ce946d.png!q70.jpg.dpg" alt="">
+					<span class="item_name">时令水果榜</span>
+					<p class="item_title">预售爆款</p>
+				</li>
+				<li>
+					<img src="https://m.360buyimg.com/mobilecms/s240x174_jfs/t1/83595/27/13081/33511/5da5aac2Eaebaf0d4/ae2e0996fea96d41.png!q70.jpg.dpg" alt="" class='full_bg'>
+					<img class='center_img' src="https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/63497/3/13541/597537/5dae7dd8E55c6d615/e38fc7e9aa22d17e.jpg!q70.jpg.dpg" alt="">
+					<span class="item_name">大屏娱乐</span>
+					<p class="item_title">实惠当道</p>
+				</li>
+				<li class='no_right'>
+					<img src="https://m.360buyimg.com/mobilecms/s240x174_jfs/t1/54543/38/13625/32191/5da5aaf2E6871d0bc/79795888ea3bcb0a.png!q70.jpg.dpg" alt="" class='full_bg'>
+					<img class='center_img' src="https://m.360buyimg.com/mobilecms/s240x240_jfs/t1/40703/34/7861/59463/5d1584b7Ec4673458/a22dffcd3bd54dfa.jpg!q70.jpg.dpg" alt="">
+					<span class="item_name">运动潮人</span>
+					<p class="item_title">运动搭配</p>
+				</li>
+			</ul>
+		</div>
+		<div class="title">
+			<img src="https://m.360buyimg.com/mobilecms/s750x80_jfs/t1/61472/40/13917/10060/5db00ef4E7c4ae678/cf52945c363d6ff8.png!q70.jpg.dpg" alt="">
+		</div>
+		<div class="featured_list">
+			<ul>
+				<li>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t1/54326/13/13389/16329/5da52cf5E054d80de/c4bc3322b0e8c78c.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>每满200减30</span>
+					<p class='img_title'>保养配件</p>
+				</li>
+				<li>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t1/74959/29/13636/195135/5db11356E50b40470/a3bd21682124fb85.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>天天抢五折</span>
+					<p class='img_title'>品质家电</p>
+				</li>
+				<li>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t1/16690/35/12525/510364/5c99c291E90f845e8/6283b78b33a41f6a.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>满200减100</span>
+					<p class='img_title'>京东超市</p>
+				</li>
+				<li class='no_right'>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t1/65681/33/12765/55789/5da04833E8f036813/3113898e78e9bc35.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>定金五倍膨胀</span>
+					<p class='img_title'>服饰预售</p>
+				</li>
+				<li>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t1/99739/20/559/335498/5db026fbE72599d2d/aab69a128fe8b4de.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>好物抢先定</span>
+					<p class='img_title'>居家预售</p>
+				</li>
+				<li>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t1/66991/40/8602/92821/5d6743d0Ed0eec544/f1b6954d52a2ff66.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>手机5折抢</span>
+					<p class='img_title'>手机通讯</p>
+				</li>
+				<li>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t26179/362/900967/280508/457b79f4/5b7fc70cN8375576f.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>抢超级礼盒</span>
+					<p class='img_title'>电脑数码</p>
+				</li>
+				<li class='no_right'>
+					<div class="img">
+						<img src="https://m.360buyimg.com/n1/s240x240_jfs/t18844/204/1363434315/375180/5230a9fa/5ac7142cNff5a9ac5.jpg!q70.jpg.dpg" alt="">
+					</div>
+					<span class='desc'>每满100减50</span>
+					<p class='img_title'>京东图书</p>
+				</li>
+			</ul>
+		</div>
+		<!-- 东家小院开始 -->
+		<div class="title">
+			<img src="https://m.360buyimg.com/mobilecms/s750x80_jfs/t1/55549/33/13907/24646/5da9e296Eff26cb61/96fbfc993d2e4e57.png!q70.jpg.dpg" alt="">
+		</div>
+		<div class="east_home">
+			<div class="top">
+				<div class='top_left'>
+					<div class="text">
+						<span class='text_name'>科技潮玩</span>
+						<span>畅游芯时代</span>
+					</div>
+					<div class="img_box">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t29560/119/23567095/777048/10b8bd82/5be56aa9Nc892045b.png!q70.jpg.dpg" alt="">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/51782/33/14607/133238/5db81468Ea03b6cfb/388933305674098b.jpg!q70.jpg.dpg" alt="">
+					</div>
+				</div>
+				<div class='top_right'>
+					<div class="text">
+						<span class='text_name'>一表人才</span>
+						<span>天俊：此刻有我</span>
+					</div>
+					<div class="img_box">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/48791/20/14128/283277/5db10b22Eedfcf136/c61aa8b6344fbf26.jpg!q70.jpg.dpg" alt="">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/72637/13/12282/646599/5d9c1f71E07f384c1/2cd86429e324e516.jpg!q70.jpg.dpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div>
+					<div class="text">
+						<span class='text_name'>出行无忧</span>
+						<span>轻松伴旅</span>
+					</div>
+					<div class="img">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/60381/6/5802/164554/5d3e5327Eb9f1782f/d72fd1a5fac1af35.jpg!q70.jpg.dpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="text">
+						<span class='text_name'>温暖呵护</span>
+						<span>暖到心坎里</span>
+					</div>
+					<div class="img">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/53178/21/4857/65139/5d28400fEcaf2272e/a0f5f3b1082d3e09.jpg!q70.jpg.dpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="text">
+						<span class='text_name'>御寒法宝</span>
+						<span>为暖而战</span>
+					</div>
+					<div class="img">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/70440/9/13848/219134/5db291f0Eb9efa0a5/9c526f6e9188231b.jpg!q70.jpg.dpg" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="text">
+						<span class='text_name'>深金柔滑</span>
+						<span>美酒助兴醉</span>
+					</div>
+					<div class="img">
+						<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/52294/39/9053/104864/5d6888b7E523d9405/3cc06ffcd162dcb4.jpg!q70.jpg.dpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 东家小院结束 -->
+		<!-- 每日逛开始 -->
+		<div class="title">
+			<img src="https://m.360buyimg.com/mobilecms/s750x80_jfs/t1/106530/2/230/23804/5da9e25eE2a5a1b86/83ed01ee130577ce.png!q70.jpg.dpg" alt="">
+		</div>
+		<div class="every_day">
+			<div>
+				<div class="text">
+					<span class='text_name'>免息星球</span>
+					<span>白兔条信息购</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/60381/6/5802/164554/5d3e5327Eb9f1782f/d72fd1a5fac1af35.jpg!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="text">
+					<span class='text_name'>品牌闪购</span>
+					<span>享品质好物</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/n1/s150x150_jfs/t18337/154/150031047/10921/90aecefc/5a60384dN46bf2eac.jpg!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="text">
+					<span class='text_name'>品牌秒杀</span>
+					<span>低价抢大牌</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/n1/s150x150_jfs/t1/75935/3/14136/212874/5db81d1bEab337e0c/6be5fc5c45d6a422.jpg!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+			<div class='no_border'>
+				<div class="text">
+					<span class='text_name'>京东直播</span>
+					<span>好货即刻买</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/79087/9/714/26464/5cef9636Ea4fe2ba8/90f1c44b1b1f6e2e.png!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="text">
+					<span class='text_name'>排行榜</span>
+					<span>热销推荐</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/56939/39/1210/59272/5cefa52dE2f70588a/3174a20e743edd49.png!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="text">
+					<span class='text_name'>拍拍好物</span>
+					<span>iphone 5折起</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/34938/26/11155/70774/5cefa0c6E5a90edb2/47b686712510d44e.png!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+			<div>
+				<div class="text">
+					<span class='text_name'>新品首发</span>
+					<span>京东小魔方</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/n1/s150x150_jfs/t11128/25/2817168750/9187/72b53c/5cdaa568N8f652eb8.jpg!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+			<div class='no_border'>
+				<div class="text">
+					<span class='text_name'>发现好货</span>
+					<span>发现品质生活</span>
+				</div>
+				<div class="img">
+					<img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/50174/30/1230/9784/5cef98bfE318f8d24/4720dc4079dd568b.jpg!q70.jpg.dpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 每日逛结束 -->
+		<!-- 京东快报开始 -->
+		<div class="new_list_wrapper">
+			<img class='new_logo' src="https://m.360buyimg.com/mobilecms/jfs/t14752/82/2574581467/6535/c8158ace/5aa8935bN94e31ff6.jpg.dpg" alt="">
+			<div class="new_list">
+				<ul>
+					<li>
+						<span>推荐</span>
+						​泡面的花样吃法你知道几种？第一种常见，第五种很奇葩
+					</li>
+				</ul>
+			</div>
+			<a href="" class='more_new'>更多</a>
+		</div>
+		<!-- 京东快报结束 -->
+	</div>
+	<!-- 推荐、精选区  结束 -->
+	<!-- 为你推荐  开始 -->
+	<div id="recommend_for_you">
+		<div class="title">
+			<img src="https://img11.360buyimg.com/jdphoto/jfs/t1/31601/22/15554/14040/5cc2a86fEbdb1098b/88174b36f85283b6.png" alt="">
+		</div>
+		<ul class="list">
+			<li>
+				<a href="">
+					<img src="https://img14.360buyimg.com/mobilecms/s372x372_jfs/t1/60877/31/13794/198485/5db1a198Ee1153e70/c458ea877af8e06c.jpg!q70.dpg.webp" alt="">
+					<p>   
+						上海美人鱼万鲤长城碳素鱼竿手杆超轻超硬钓鱼竿五大品牌鱼竿 3.6米【万鲤长城】                             
+					</p>
+					<div class="price_box">
+						<span class='price'>
+							<i>￥</i>258
+						</span>
+						<span class='look_some'>看相似</span>
+					</div>
+				</a>
+			</li>
+			<li class='no_border'>
+				<a href="">
+					<img src="https://img14.360buyimg.com/mobilecms/s372x372_jfs/t1/22746/35/11162/104085/5c8b6a19Eb8e8f34e/9cd57e3a481c7160.jpg!q70.dpg.webp" alt="">
+					<p>   
+						Redmi Note7Pro 索尼4800万超清双摄 骁龙675 18个月超长质保 4000mAh超长续航 6GB+128GB 梦幻蓝 游戏智能手机 小米 红米                                                  
+					</p>
+					<div class="price_box">
+						<span class='price'>
+							<i>￥</i>1399
+							<span class="price_tag">满减</span>
+						</span>
+						<span class='look_some'>看相似</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="https://img13.360buyimg.com/mobilecms/s372x372_jfs/t1/66168/28/5138/151776/5d35c255E0ca335e1/a363047d63c74070.jpg!q70.dpg.webp" alt="">
+					<p>   
+						大物鱼竿鱼王者鲟鱼竿大物竿暴力杆超硬巨物鱼竿碳素青鱼竿钓鱼竿战青鲟至尊 狂拉不断200斤3.9米竿加送礼包                                                  
+					</p>
+					<div class="price_box">
+						<span class='price'>
+							<i>￥</i>153
+							<span class="price_tag">满减</span>
+						</span>
+						<span class='look_some'>看相似</span>
+					</div>
+				</a>
+			</li>
+			<li class='no_border'>
+				<a href="">
+					<img src="https://img12.360buyimg.com/mobilecms/s372x372_jfs/t1/47375/30/937/78099/5ceaa12aE27156321/1e91dafe6e1694bf.jpg!q70.dpg.webp" alt="">
+					<p>   
+						不锈钢钓鱼竿支架渔具钓箱炮台支架杆多功能地插台钓鱼竿架子超硬Y 桔色 2.4m                                                                   
+					</p>
+					<div class="price_box">
+						<span class='price'>
+							<i>￥</i>89
+						</span>
+						<span class='look_some'>看相似</span>
+					</div>
+				</a>
+			</li>
+			<li >
+				<a href="">
+					<img src="https://img13.360buyimg.com/mobilecms/s372x372_jfs/t1/81633/3/2885/269445/5d120a40Ee35a0d03/b85a4c8fbadfbea8.jpg!q70.dpg.webp" alt="">
+					<p>   
+						【品质保证】【上新特惠】便携拖鞋出门出国泰国旅游旅行必备用品创意多功能出差旅行神器 蓝色(42/43码)                                                                           
+					</p>
+					<div class="price_box">
+						<span class='price'>
+							<i>￥</i>59
+						</span>					
+						<span class='look_some'>看相似</span>
+					</div>
+				</a>
+			</li>
+			<li class='no_border'>
+				<a href="">
+					<img src="https://img12.360buyimg.com/mobilecms/s372x372_jfs/t1/71613/40/11950/192888/5d982ba6E82a4f83a/3841f3513b9bb9c2.jpg!q70.dpg.webp" alt="">
+					<p>   
+						网红同款帆布鞋女春秋季2019新款潮韩版百搭学生踩脚两穿软底舒适 白色 35                                                                                            
+					</p>
+					<div class="price_box">
+						<span class='price'>
+							<i>￥</i>136
+							<span class="price_tag">新品</span>
+						</span>
+						<span class='look_some'>看相似</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 为你推荐  结束 -->
+	<!-- 首页底部  开始 -->
+	<footer>
+		<a href="">
+			<img src="https://img11.360buyimg.com/jdphoto/s130x100_jfs/t1/67550/26/12426/5094/5d9c4b13Eea435a3f/81328b0609c60a3c.png" alt="">
+		</a>
+		<a href="">
+			<img src="https://img11.360buyimg.com/jdphoto/s130x100_jfs/t1/56507/6/12787/3168/5d9c4b12Ef363dd8d/4af32f42575509d8.png" alt="">
+		</a>
+		<a href="">
+			<img src="https://img11.360buyimg.com/jdphoto/s130x100_jfs/t1/70651/38/12417/3194/5d9d3eafE12cde68b/2467c20113c50451.png" alt="">
+		</a>
+		<a href="">
+			<img src="https://img11.360buyimg.com/jdphoto/s130x100_jfs/t1/64954/4/12406/3529/5d9c4b12Ee7a82735/f2fe0a88bf344736.png" alt="">
+		</a>
+		<a href="">
+			<img src="https://img11.360buyimg.com/jdphoto/s130x100_jfs/t1/68400/36/12368/3153/5d9c4b13E0e0d80a8/876c40f17d91ce44.png" alt="">
+		</a>
+	</footer>
+	<!-- 首页底部  结束 -->
+</body>
+<script type="text/javascript"  src='./js/data.js' charset="UTF-8"></script>
+<!-- <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script> -->
+<script src=http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+<script type="text/javascript"   src='./js/index.js'  ></script>
+</html>
